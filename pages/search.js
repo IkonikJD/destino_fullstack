@@ -25,7 +25,7 @@ const SearchResults = () => {
         <div className='col-span-1 lg:col-span-8'>
           <div className='bg-white shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8'>
             <h2 className='text-2xl mb-4'>
-              Resultados de búsqueda para "{term}":
+              Resultados de búsqueda para &quot;{term}&quot;:
             </h2>
             {searchResults.length > 0 ? (
               searchResults.map((result) => (
@@ -34,7 +34,7 @@ const SearchResults = () => {
                 </div>
               ))
             ) : (
-              <p>No se encontraron resultados para "{term}".</p>
+              <p>No se encontraron resultados para &quot;{term}&quot;.</p>
             )}
           </div>
         </div>
