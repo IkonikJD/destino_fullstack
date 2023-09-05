@@ -1,0 +1,40 @@
+{
+  "name": "myblogpersonal",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@mapbox/rehype-prism": "^0.8.0",
+    "@tailwindcss/typography": "^0.5.9",
+    "brace": "^0.11.1",
+    "graphql": "^16.7.1",
+    "graphql-request": "^6.1.0",
+    "gray-matter": "^4.0.3",
+    "html-react-parser": "^4.0.0",
+    "markdown-to-jsx": "^7.2.1",
+    "moment": "^2.29.4",
+    "next": "13.4.8",
+    "prismjs": "^1.29.0",
+    "react": "18.2.0",
+    "react-ace": "^10.1.0",
+    "react-dom": "18.2.0",
+    "react-markdown": "^8.0.7",
+    "react-multi-carousel": "^2.8.4",
+    "react-syntax-highlighter": "^15.5.0",
+    "remark-gfm": "^3.0.1",
+    "remark-html": "^15.0.2",
+    "sass": "^1.63.6"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "eslint": "8.44.0",
+    "eslint-config-next": "13.4.8",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
+  }
+}
