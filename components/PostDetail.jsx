@@ -106,7 +106,7 @@ const PostDetail = ({ post }) => {
                 </div>
               ) : (
                 <button
-                  className='absolute right-2 p-2 bg-blue-500 text-white rounde hover:bg-blue-600'
+                  className='absolute right-2 p-2 bg-blue-500 text-white rounded hover:bg-blue-600'
                   onClick={() => {
                     const codeElement = document
                       .getElementById(`code-${index}`)
