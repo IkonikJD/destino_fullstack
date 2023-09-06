@@ -88,7 +88,7 @@ const PostDetail = ({ post }) => {
           <div key={index} className='mb-8' id={`code-${index}`}>
             {firstWord && (
               <div
-                className='mb-2 text-xl font-bold uppercase text-gray-600'
+                className='text-xl font-bold uppercase text-gray-600'
                 style={{ fontFamily: 'monospace' }}
               >
                 {firstWord}
@@ -96,17 +96,17 @@ const PostDetail = ({ post }) => {
             )}
             <div
               key={index}
-              className='relative rounded-lg mb-8 overflow-x-auto whitespace-pre'
+              className='relative rounded-lg overflow-x-auto whitespace-pre'
               style={{ borderRadius: '8px' }}
             >
               {/* Cambiamos el contenido del botón "Seleccionar Todo" para que dependa del estado del code-block */}
               {copied[index] ? (
-                <div className='absolute top-4 right-2 p-2 bg-green-500 text-white rounded'>
+                <div className='absolute right-2 p-2 bg-green-500 text-white rounded'>
                   Copiado!
                 </div>
               ) : (
                 <button
-                  className='absolute top-4 right-2 p-2 mb-4 bg-blue-500 text-white rounded hover:bg-blue-600'
+                  className='absolute right-2 p-2 bg-blue-500 text-white rounded hover:bg-blue-600'
                   onClick={() => {
                     const codeElement = document
                       .getElementById(`code-${index}`)
@@ -138,6 +138,7 @@ const PostDetail = ({ post }) => {
                 </button>
               )}
               {/* Utilizamos el componente SyntaxHighlighter para agregar el resaltado de sintaxis */}
+
               <SyntaxHighlighter language={language} style={dracula}>
                 {contentWithoutFirstWord}
               </SyntaxHighlighter>
