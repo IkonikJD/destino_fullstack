@@ -116,7 +116,7 @@ const PostDetail = ({ post }) => {
                     navigator.clipboard
                       .writeText(codeText)
                       .then(() => {
-                        // Actualizamos el estado para mostrar el indicador visual
+                        // Actualizamos el estado para mostrar el indicador
                         setCopied((prevCopied) => ({
                           ...prevCopied,
                           [index]: true,
